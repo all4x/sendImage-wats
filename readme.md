@@ -1,0 +1,5 @@
+ await page.click('//*[@id="loginForm"]/div/div[1]/div/label/input')
+            await page.keyboard.insert_text("sr_all3x")
+            await page.click('//*[@id="loginForm"]/div/div[2]/div/label/input')
+            await page.keyboard.insert_text("ADEJ@30312")
+            await page.click("//*[@id='loginForm']/div/div[3]")
