@@ -2,10 +2,13 @@
 import html
 import requests
 from bs4 import BeautifulSoup as bs
+import pandas as pd
+
+
 
 url= 'https://www.instagram.com/explore/tags/duckcute/'
 
-r = requests.get('https://www.instagram.com/explore/tags/duckcute/')
+r = requests.get(url)
 html_doc = r.content 
 
 
