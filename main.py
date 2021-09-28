@@ -15,11 +15,7 @@ async def main():
         link = soup.find_all('img')
         for link in soup.find_all('img'):
             foto = (link.get('src'))
-
-            # tratar os dados
-            await page.goto(foto)
-            time.sleep(3)
-            await page.screenshot(path='patinho.png')
+            print(foto)
 
             # organizar links com pandas
 
