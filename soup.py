@@ -1,14 +1,14 @@
 
-import html
+
 import requests
 from bs4 import BeautifulSoup as bs
 
-url= 'https://www.instagram.com/explore/tags/duckcute/'
+url = 'https://www2.correios.com.br/sistemas/rastreamento/ctrl/ctrlRastreamento.cfm?'
 
-r = requests.get('https://www.instagram.com/explore/tags/duckcute/')
-html_doc = r.content 
-
+r = requests.post(url='https://www2.correios.com.br/sistemas/rastreamento/ctrl/ctrlRastreamento.cfm?', data={'objetos' : 'QH119857610BR'})
+html_doc = r._content
 
 soup = bs(html_doc, 'html.parser')
-tags = soup.find_all('a')
+tag = soup.find(id="objetos")
 
+print(tag)
