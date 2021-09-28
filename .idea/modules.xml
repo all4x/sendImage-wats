@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/sendImage-wats.iml" filepath="$PROJECT_DIR$/.idea/sendImage-wats.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/project.iml" filepath="$PROJECT_DIR$/.idea/project.iml" />
+>>>>>>> f238b564304ae1ce6052dfea88eb9134e2eab08b
     </modules>
   </component>
 </project>
